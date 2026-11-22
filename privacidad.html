@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Política de privacidad de PathOnDuty</h1>
-<p class="fecha">Última actualización: 18 de noviembre de 2026</p>
+<p class="fecha">Última actualización: 21 de noviembre de 2026</p>
 
 <p>PathOnDuty es una app para salir de caminata en grupo: muestra la ruta en un mapa sin internet, tu posición
 y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Carlos Arturo Diaz Carrillo
@@ -24,43 +24,55 @@ y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Car
       compartir tu posición con tu grupo. Se usa con la pantalla apagada <b>solo mientras hay una salida iniciada</b>; se detiene al tocar «Terminar».</li>
   <li><b>Nombre</b> que tú escribes para que el grupo te reconozca.</li>
   <li><b>Recorrido de la salida</b> (puntos de tu camino con hora y precisión) y <b>nivel de batería</b>.</li>
-  <li><b>Número de emergencia</b> que tú escribes para el SOS. El mensaje SOS lo envías tú desde tu app de mensajes.</li>
+  <li><b>Números de emergencia</b> para el SOS. Hay dos: <b>tu número personal</b>, que escribes tú y se queda solo en tu teléfono;
+      y el <b>número de emergencia del grupo</b>, que escribe el organizador y se guarda con los datos del grupo (ver abajo).
+      El mensaje SOS lo envías tú desde tu app de mensajes.</li>
+  <li><b>Datos del grupo</b> que crea el organizador: nombre del grupo, distancia máxima entre integrantes, número de emergencia del grupo y la ruta de la salida.</li>
   <li><b>Sensores del teléfono</b> (pasos y brújula): solo dentro del teléfono, para completar el recorrido y orientar el mapa. No se envían.</li>
   <li><b>Cámara</b>: solo para leer el código QR del grupo. No se guardan fotos.</li>
-  <li><b>Registro de errores</b>: si la app falla, se guarda en el teléfono qué pasó. Solo sale del teléfono si tú tocas «Enviar reporte».</li>
+  <li><b>Registro de errores</b>: si la app falla, se guarda en el teléfono qué pasó (no incluye posiciones ni nombres).
+      Solo sale del teléfono si tú tocas «Enviar reporte de errores»: se abre el menú de compartir del teléfono y tú eliges
+      la app (correo, WhatsApp u otra) y a quién mandarlo. La app no lo envía a ningún servidor.</li>
 </ul>
 
 <h2>Con quién se comparten</h2>
 <ul>
   <li>Con <b>las personas de tu mismo grupo</b>, durante las salidas de grupo: tu nombre, posición, recorrido, batería y aviso de SOS.
-      Viajan por internet y, sin señal, por Bluetooth entre teléfonos cercanos del grupo (cifrado con la clave del grupo).</li>
-  <li>Se guardan en <b>Firebase</b> (Google), que funciona como servidor del grupo. El acceso es con una identificación anónima; no se pide correo ni contraseña.</li>
+      Viajan por internet y, sin señal, directo entre teléfonos cercanos del grupo por <b>Bluetooth</b> y por <b>WiFi directo (Wi-Fi Aware)</b>,
+      cifrados con la clave del grupo.</li>
+  <li>Se guardan en <b>Firebase</b> (Google), que funciona como servidor del grupo: tu nombre, tu posición en vivo, tus recorridos, tu batería y el aviso de SOS,
+      y los datos del grupo (nombre, distancia máxima, número de emergencia del grupo y ruta). El nombre del grupo, la distancia máxima y el número de emergencia del grupo también van en el código QR del grupo.
+      Tu número de emergencia personal <b>no</b> se guarda en Firebase. El acceso es con una identificación anónima; no se pide correo ni contraseña.</li>
   <li><b>No</b> se venden datos, <b>no</b> se usan para publicidad y <b>no</b> se comparten con nadie más.</li>
 </ul>
 
 <h2>Cuánto tiempo se guardan</h2>
 <ul>
-  <li>Tu posición en vivo se borra del servidor al terminar la salida.</li>
-  <li>Los recorridos de las salidas se borran del servidor automáticamente a los <b>90 días</b>.</li>
+  <li><b>Tu posición en vivo</b>: la app la borra del servidor cuando tocas «Terminar». Si en ese momento no hay internet,
+      queda la última posición enviada hasta tu siguiente salida con ese grupo, o hasta que pidas que se borre.</li>
+  <li><b>Tus recorridos</b>: la app borra del servidor los de más de <b>90 días</b> la próxima vez que haces una salida de grupo con internet.
+      Si no vuelves a salir con ese grupo, se quedan hasta que pidas que se borren.</li>
+  <li><b>Los datos del grupo</b> se quedan mientras el grupo exista, hasta que el organizador pida que se borren.</li>
   <li>En el teléfono se guardan tus últimas 30 salidas; se borran al desinstalar la app.</li>
 </ul>
 
 <h2 id="borrar-datos">Cómo borrar tus datos de PathOnDuty</h2>
 <ol>
-  <li>En la app, en la pestaña «Salir», toca «Salir del grupo»: dejas de compartir tu posición con ese grupo.</li>
+  <li>En la app, en la pestaña «Salir», toca «Salir del grupo»: dejas de compartir tu posición con ese grupo. Esto no borra lo que ya está en el servidor.</li>
   <li>Para borrar todo lo guardado en el servidor, escribe a <a href="mailto:carlday2013@gmail.com?subject=Borrar%20mis%20datos%20de%20PathOnDuty">carlday2013@gmail.com</a>
       con el asunto «Borrar mis datos de PathOnDuty» e indica tu nombre en la app y el código de tu grupo.</li>
-  <li>En un plazo máximo de 30 días se borran tu nombre, tu número de emergencia, tus posiciones y tus recorridos. No se conserva ningún dato tuyo.</li>
+  <li>En un plazo máximo de 30 días se borran tu nombre, tus posiciones y tus recorridos; si eres el organizador, también los datos del grupo,
+      incluido el número de emergencia del grupo. No se conserva ningún dato tuyo.</li>
   <li>Desinstalar la app borra todo lo guardado en el teléfono.</li>
 </ol>
-<p>Aunque no lo pidas, los recorridos se borran del servidor automáticamente a los 90 días.</p>
+<p>Aunque no lo pidas, la app borra del servidor tus recorridos de más de 90 días cada vez que haces una salida de grupo con internet.</p>
 
 <h2>Menores de edad</h2>
 <p>La app está dirigida a personas mayores de 18 años. Los menores de edad solo deben usarla con permiso y acompañados por un adulto responsable del grupo.</p>
 
 <h2>Aviso de seguridad</h2>
 <p>PathOnDuty es una ayuda para orientarse y mantenerse en grupo. No reemplaza a un guía profesional, a los servicios de
-rescate ni al número de emergencias. El GPS, el internet y el Bluetooth pueden fallar en montaña.</p>
+rescate ni al número de emergencias. El GPS, el internet, el Bluetooth y el WiFi pueden fallar en montaña.</p>
 
 <h2>Cambios</h2>
 <p>Si esta política cambia, se publicará aquí con la nueva fecha.</p>
