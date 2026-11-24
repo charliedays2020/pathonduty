@@ -18,6 +18,10 @@
 - PR #2 (`estado/reparto-claude`, este `ESTADO.md`) ya está en `main`.
 
 ## En curso
+- **Política para PathOnDuty 1.3.0 (24-nov)**, rama `politica/1.3.0-salidas` → `main`: «Mis salidas» y el resumen, huellas y camino del guía
+  en el teléfono, peso opcional solo en el teléfono, barómetro, y compartir GPX/imagen solo si la persona lo hace. Fecha 24-nov.
+  El mismo texto va en TrackOnDuty (`docs/play/privacidad-pathonduty.html`). **Fusionar los dos el mismo día, antes de subir la 1.3.0 a Play.**
+
 - **PR de la auditoría de Claude App (21-nov)**, rama `auditoria/politica-21nov` → `main`. Esperando OK de Carlos:
   - política corregida y con fecha 21-nov: quién borra (la app), Wi-Fi Aware, número de emergencia del grupo en Firebase, a dónde va «Enviar reporte»;
   - el mismo cambio va en el PR de TrackOnDuty a `prueba` (`docs/play/privacidad-pathonduty.html`). **Fusionar los dos el mismo día.**
