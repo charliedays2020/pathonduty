@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Política de privacidad de PathOnDuty</h1>
-<p class="fecha">Última actualización: 21 de noviembre de 2026</p>
+<p class="fecha">Última actualización: 24 de noviembre de 2026</p>
 
 <p>PathOnDuty es una app para salir de caminata en grupo: muestra la ruta en un mapa sin internet, tu posición
 y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Carlos Arturo Diaz Carrillo
@@ -28,7 +28,14 @@ y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Car
       y el <b>número de emergencia del grupo</b>, que escribe el organizador y se guarda con los datos del grupo (ver abajo).
       El mensaje SOS lo envías tú desde tu app de mensajes.</li>
   <li><b>Datos del grupo</b> que crea el organizador: nombre del grupo, distancia máxima entre integrantes, número de emergencia del grupo y la ruta de la salida.</li>
-  <li><b>Sensores del teléfono</b> (pasos y brújula): solo dentro del teléfono, para completar el recorrido y orientar el mapa. No se envían.</li>
+  <li><b>Mis salidas</b>: cada salida se graba al momento en tu teléfono (posición, hora, precisión y altura) para que no se pierda si la app se cierra.
+      Con eso la app arma el <b>resumen de la salida</b> (distancia, tiempos, ritmo, desnivel, subidas y parciales). Se queda solo en tu teléfono.</li>
+  <li><b>Mis huellas</b>: los senderos que ya caminaste se guardan en tu teléfono para recalcular la ruta sin internet. En una salida de grupo,
+      también se guarda en tu teléfono el camino que hizo el guía. No se suben a internet.</li>
+  <li><b>Tu peso (opcional)</b>: solo si lo escribes, para calcular las calorías aproximadas del resumen. Se queda solo en tu teléfono:
+      no se comparte con el grupo ni se guarda en Firebase. Sin peso, la app no muestra calorías.</li>
+  <li><b>Sensores del teléfono</b> (pasos, brújula y, si tu teléfono lo tiene, <b>barómetro</b>): solo dentro del teléfono, para completar el recorrido,
+      orientar el mapa y medir la altura y el desnivel de la salida. No se envían.</li>
   <li><b>Cámara</b>: solo para leer el código QR del grupo. No se guardan fotos.</li>
   <li><b>Registro de errores</b>: si la app falla, se guarda en el teléfono qué pasó (no incluye posiciones ni nombres).
       Solo sale del teléfono si tú tocas «Enviar reporte de errores»: se abre el menú de compartir del teléfono y tú eliges
@@ -43,6 +50,8 @@ y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Car
   <li>Se guardan en <b>Firebase</b> (Google), que funciona como servidor del grupo: tu nombre, tu posición en vivo, tus recorridos, tu batería y el aviso de SOS,
       y los datos del grupo (nombre, distancia máxima, número de emergencia del grupo y ruta). El nombre del grupo, la distancia máxima y el número de emergencia del grupo también van en el código QR del grupo.
       Tu número de emergencia personal <b>no</b> se guarda en Firebase. El acceso es con una identificación anónima; no se pide correo ni contraseña.</li>
+  <li>Con quien <b>tú elijas</b>: desde el resumen de una salida puedes compartirla como archivo GPX o como imagen. Solo sale del teléfono si tú
+      tocas «Compartir» y eliges la app (WhatsApp, Strava, correo u otra) y a quién mandarla.</li>
   <li><b>No</b> se venden datos, <b>no</b> se usan para publicidad y <b>no</b> se comparten con nadie más.</li>
 </ul>
 
@@ -53,7 +62,8 @@ y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Car
   <li><b>Tus recorridos</b>: la app borra del servidor los de más de <b>90 días</b> la próxima vez que haces una salida de grupo con internet.
       Si no vuelves a salir con ese grupo, se quedan hasta que pidas que se borren.</li>
   <li><b>Los datos del grupo</b> se quedan mientras el grupo exista, hasta que el organizador pida que se borren.</li>
-  <li>En el teléfono se guardan tus últimas 30 salidas; se borran al desinstalar la app.</li>
+  <li>En el teléfono se guardan tus últimas 30 salidas («Mis salidas»); las más viejas se borran solas. Tus huellas y tu peso se quedan hasta que los borres.
+      Todo se borra al desinstalar la app.</li>
 </ul>
 
 <h2 id="borrar-datos">Cómo borrar tus datos de PathOnDuty</h2>
@@ -63,6 +73,8 @@ y la de las personas de tu grupo, y permite pedir ayuda (SOS). La desarrolla Car
       con el asunto «Borrar mis datos de PathOnDuty» e indica tu nombre en la app y el código de tu grupo.</li>
   <li>En un plazo máximo de 30 días se borran tu nombre, tus posiciones y tus recorridos; si eres el organizador, también los datos del grupo,
       incluido el número de emergencia del grupo. No se conserva ningún dato tuyo.</li>
+  <li>En el teléfono, en la pestaña «Salir»: toca una salida en «Mis salidas» y luego «Borrar»; «Borrar mis huellas» borra los senderos guardados;
+      y en «Tu peso», «Cambiar» y luego «Quitar» borra tu peso.</li>
   <li>Desinstalar la app borra todo lo guardado en el teléfono.</li>
 </ol>
 <p>Aunque no lo pidas, la app borra del servidor tus recorridos de más de 90 días cada vez que haces una salida de grupo con internet.</p>
